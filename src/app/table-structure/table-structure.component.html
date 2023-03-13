@@ -1,0 +1,30 @@
+<p-breadcrumb
+  [model]="items"
+  (onItemClick)="onclickBreadCrumb($event)"
+></p-breadcrumb>
+
+<p-table
+  [value]="listOfFiles"
+  selectionMode="single"
+  [(contextMenuSelection)]="selectedFileFolder"
+  [contextMenu]="cm"
+  (onRowSelect)="onRowSelect($event)"
+  [tableStyle]="{ 'min-width': '50rem' }"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>name</th>
+      <th>size</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-file>
+    <tr [pSelectableRow]="file" [pContextMenuRow]="file">
+      <td>
+        <span class="pi pi-folder" *ngIf="!file.isFile"> {{ file.name }}</span>
+        <span class="pi pi-file" *ngIf="file.isFile"> {{ file.name }}</span>
+      </td>
+      <td>{{ file.size }}</td>
+    </tr>
+  </ng-template>
+</p-table>
+<p-contextMenu #cm [model]="contextMenuitems"></p-contextMenu>

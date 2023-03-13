@@ -1,0 +1,58 @@
+{
+  "currentFolder": {
+    "fileModelId": 1,
+    "testId": 116,
+    "parentId": 0,
+    "rootPath": 0,
+    "name": "2018",
+    "size": 12,
+    "shortSize": 13,
+    "dateModified": "",
+    "dateCreated": "",
+    "hasChild": true,
+    "isFile": false,
+    "type": "",
+    "downloadPath": "",
+    "icon": ""
+  },
+  "childFileModelList": [
+    {
+      "fileModelId": 1,
+      "testId": 116,
+      "parentId": 0,
+      "rootPath": 0,
+      "name": "2018",
+      "size": 12,
+      "shortSize": 13,
+      "dateModified": "",
+      "dateCreated": "",
+      "hasChild": true,
+      "isFile": false,
+      "type": "",
+      "downloadPath": "",
+      "icon": ""
+    },
+    {
+      "fileModelId": 2,
+      "testId": 116,
+      "parentId": 0,
+      "rootPath": 0,
+      "name": "test.csv",
+      "size": 12,
+      "shortSize": 13,
+      "dateModified": "",
+      "dateCreated": "",
+      "hasChild": true,
+      "isFile": true,
+      "type": "",
+      "downloadPath": "",
+      "icon": ""
+    }
+  ],
+  "parentTree": [
+    {
+      "label": "Root",
+      "folder": 1
+    }
+  ]
+}
